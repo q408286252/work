@@ -1,16 +1,14 @@
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import os
-
 mulu = 0
 while True:
     if mulu == False:
         mulu = input('输入需要批量修改的目录:')
     else:
         print('重新开始')
-        shifouxiugai = input('已有目录是否修改? y/n:(q退出)')
+        shifouxiugai = input('已有目录是否修改? y/n:')
         if shifouxiugai == 'y':
             mulu = input('输入需要批量修改的目录:')
         elif shifouxiugai == 'q':
@@ -30,7 +28,7 @@ while True:
             os.rename(mulu + i,mulu + ii)
         print('完成')
     elif xuanze == '2':
-        kaitoumowei = input('1.请输入添加开头;2.添加末尾:')
+        kaitoumowei = input('1.请输入屎添加开头;2.添加末尾:')
         if kaitoumowei == '1':
             kaitou = input('添加开头内容输入:')
             for i in muluwenjian:
