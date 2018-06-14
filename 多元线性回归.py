@@ -147,4 +147,4 @@ m = y.shape[0]
 # Print out some data points
 print('First 10 examples from the dataset: \n')
 print(' x = ',x[range(10),:],'\ny=',y[range(10),:])
-'''
+''' 
